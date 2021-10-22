@@ -80,12 +80,19 @@ class SwitchConfig {
 
     public generateSwitchConfigJson() {
         try {
-            def file = new File("switch/version.json")
-            if (!file.exists()) {
-                file.mkdirs()
+            // 指定路径如果没有则创建并添加
+            File file = new File("switch/version.json")
+            //获取父目录
+            File fileParent = file.getParentFile()
+            //判断是否存在
+            if (!fileParent.exists()) {
+                //创建父目录文件
+                fileParent.mkdirs()
             }
+            file.createNewFile()
             file.write(JsonOutput.prettyPrint(JsonOutput.toJson(dependencies)))
         } catch (FileNotFoundException exception) {
+            exception.printStackTrace()
             println "switch/version.json 文件生成失败"
         }
     }
