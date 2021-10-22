@@ -478,7 +478,7 @@ class SwitchConfig {
         try {
             def file = new File("switch/version.json")
             if (!file.exists()) {
-                file.createNewFile()
+                file.mkdirs()
             }
             file.write(JsonOutput.prettyPrint(JsonOutput.toJson(dependencies)))
         } catch (FileNotFoundException exception) {

@@ -80,13 +80,13 @@ class SwitchConfig {
 
     public generateSwitchConfigJson() {
         try {
-            def file = new File("switch/version_flashman.json")
+            def file = new File("switch/version.json")
             if (!file.exists()) {
-                file.createNewFile()
+                file.mkdirs()
             }
             file.write(JsonOutput.prettyPrint(JsonOutput.toJson(dependencies)))
         } catch (FileNotFoundException exception) {
-            println "switch/version_flashman.json 文件生成失败"
+            println "switch/version.json 文件生成失败"
         }
     }
 

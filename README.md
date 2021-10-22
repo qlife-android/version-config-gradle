@@ -15,3 +15,6 @@ def v_1_0_0 = "/71ff77e3c69055b5719f6790275f0d52da522301"
 ```
 
 https://raw.githubusercontent.com/qlife-android/version-config-gradle/master/version.gradle
+
+https://raw.githubusercontent.com/qlife-android/version-config-gradle/b5156833e3c08b61f46fb6f17792c720cddaf659/version.gradle
+
