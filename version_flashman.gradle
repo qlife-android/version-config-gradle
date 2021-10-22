@@ -1,0 +1,101 @@
+import groovy.json.JsonOutput
+
+ext {
+
+    //todo 依赖类型：依赖远程maven组件的构建类型
+    // false: 依赖release版本
+    // true: 依赖debug版本
+    def dependenceTypeIsDebug = false
+    def buildSuffix = dependenceTypeIsDebug ? "-debug" : "-release"
+    //用于生成依赖信息的类
+    def switchConfig = new SwitchConfig()
+    //公共的包名前缀统一定义在这里,
+    groupCommonPrefix = [
+            // 公共的包名前缀统一定义在这里, 组件索引前缀，添加android标记以区别其它项目
+            com_flashman_android = "com.flashman.android",
+            build_suffix = buildSuffix,
+            switch_config_flashman = switchConfig
+    ]
+
+    /** ========================================================= */
+    /** ====================== Maven私服组件 ===================== */
+    /** ========================================================= */
+
+    //maven 组件依赖版本号
+    versionCommponentArray = [
+
+            //仓库：aoao-base-flashman-android 非共享
+            //由于 baseFlashman 是获取全局配置的组件，故需要区分debug和release
+            baseFlashmanVersion = "1.0.2",
+            baseFlashman = getPath("base-flashman", baseFlashmanVersion, false),
+            baseFlashmanApi = getPath("base-flashman-api", "1.0.2", false),
+            baseBeanAoao = getPath("base-bean-aoao", "1.0.2", false),
+            baseMqttAoao = getPath("base-mqtt-aoao", "1.0.2", false),
+
+            //仓库：aoao-biz-android 非共享
+            bizUser = getPath("biz-user", "1.0.2", false),
+            bizHome = getPath("biz-home", "1.0.2", false),
+            bizHelp = getPath("biz-help", "1.0.2", false),
+            bizSetting = getPath("biz-setting", "1.0.2", false),
+            bizDispatch = getPath("biz-dispatch", "1.0.2", false),
+            bizRealName = getPath("biz-real-name", "1.0.2", false),
+            bizPerson = getPath("biz-person", "1.0.2", false),
+            bizWork = getPath("biz-work", "1.0.2", false),
+            bizVaccine = getPath("biz-vaccine", "1.0.2", false),
+            bizProblem = getPath("biz-problem", "1.0.2", false),
+            bizHistory = getPath("biz-history", "1.0.2", false),
+            bizStatistics = getPath("biz-statistics", "1.0.2", false),
+            bizChangePhone = getPath("biz-change-phone", "1.0.2", false),
+            bizStudy = getPath("biz-study", "1.0.2", false),
+            bizMonitor = getPath("biz-monitor", "1.0.2", false),
+            bizManage = getPath("biz-manage", "1.0.2", false),
+            bizMapTool = getPath("biz-map-tool", "1.0.2", false),
+
+    ]
+
+    //依赖信息更新完之后，顺序执行到这里开始生成json
+    switch_config_flashman.generateSwitchConfigJson()
+
+}
+
+private String getPath(String appName, String version) {
+    return getPath(appName, version, true)
+}
+
+
+private String getPath(String appName, String version, Boolean buildSuffix) {
+    def group = rootProject.ext.com_flashman_android
+    def switchConfig = rootProject.ext.switch_config_flashman
+    def build_suffix = buildSuffix ? rootProject.ext.build_suffix : ""
+    def name = "$appName$build_suffix"
+    def dependencies = "$group:$name:$version"
+    println "Flashman Dependencies: $dependencies"
+    switchConfig.collectionSwitchConfigJson(group, name, version)
+    return dependencies
+}
+
+class SwitchConfig {
+
+    def dependencies = new ArrayList<HashMap<String, String>>()
+
+    public generateSwitchConfigJson() {
+        try {
+            def file = new File("switch/version_flashman.json")
+            if (!file.exists()) {
+                file.createNewFile()
+            }
+            file.write(JsonOutput.prettyPrint(JsonOutput.toJson(dependencies)))
+        } catch (FileNotFoundException exception) {
+            println "switch/version_flashman.json 文件生成失败"
+        }
+    }
+
+    public collectionSwitchConfigJson(String group, String name, String version) {
+        def dependenciesInfo = new TreeMap<String, Object>()
+        dependenciesInfo.put("group", group)
+        dependenciesInfo.put("name", name)
+        dependenciesInfo.put("version", version)
+        dependencies.add(dependenciesInfo)
+    }
+}
+
