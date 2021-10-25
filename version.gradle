@@ -62,7 +62,7 @@ ext {
             libBaseAdapter = getPath("lib-base-adapter", "1.0.4", false),
 
             //仓库：qlife-base-app-android
-            baseActivity = getPath("base-activity", "1.0.1", false),
+            baseActivity = getPath("base-activity", "1.0.2", false),
             baseAuth = getPath("base-auth", "1.0.1", false),
             baseBean = getPath("base-bean", "1.0.1", false),
             baseRouter = getPath("base-router", "1.0.1", false),
