@@ -86,8 +86,8 @@ ext {
             libBaiduFaceUi = getPath("lib-baidu-face-ui", "1.0.0", false),
 
             //仓库：qlife-lib-baidu-Ocr-android
-            baseOcr = getPath("base-ocr", "1.0.1", false),
-            libBaiduOcrUi = getPath("lib-baidu-ocr-ui", "1.0.0", false),
+            baseOcr = getPath("base-ocr", "1.0.2", false),
+            libBaiduOcrUi = getPath("lib-baidu-ocr-ui", "1.0.2", false),
 
 
     ]
