@@ -82,7 +82,7 @@ ext {
 
 
             //仓库：qlife-lib-baidu-face-android
-            baseFace = getPath("base-face", "1.0.1", false),
+            baseFace = getPath("base-face", "1.0.2", false),
             libBaiduFaceUi = getPath("lib-baidu-face-ui", "1.0.2", false),
 
             //仓库：qlife-lib-baidu-Ocr-android
