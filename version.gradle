@@ -424,7 +424,7 @@ ext {
 
             answers = 'com.crashlytics.sdk.android:answers:1.4.7',
             //腾讯文件浏览服务
-            tbssdk = 'com.tencent.tbs.tbssdk:sdk:43967',
+            tbssdk = 'com.tencent.tbs.tbssdk:sdk:43993',
             //阿里云推送服务
             //接入文档：https://help.aliyun.com/document_detail/51056.html?spm=a2c4g.11186623.6.568.54e969a0jwQiMh#%E4%B8%80%E3%80%81Maven%E5%BA%93%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90(%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5)
             //注：com.aliyun.ams:alicloud-android-push:3.2.1版本与com.aliyun.ams:alicloud-android-third-push:3.2.0版本匹配使用，两者需要同时升级
