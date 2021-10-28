@@ -30,7 +30,7 @@ ext {
             baseFlashman = getPath("base-flashman", baseFlashmanVersion, false),
             baseFlashmanApi = getPath("base-flashman-api", "1.0.2", false),
             baseBeanAoao = getPath("base-bean-aoao", "1.0.2", false),
-            baseMqttAoao = getPath("base-mqtt-aoao", "1.0.2", false),
+            baseMqttAoao = getPath("base-mqtt-aoao", "1.0.3", false),
 
             //仓库：aoao-biz-android 非共享
             bizUser = getPath("biz-user", "1.0.2", false),
