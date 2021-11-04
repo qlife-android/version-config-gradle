@@ -71,7 +71,7 @@ ext {
             baseWeb = getPath("base-web", "1.0.1", false),
             baseVoice = getPath("base-voice", "1.0.1", false),
             baseGallery = getPath("base-gallery", "1.0.1", false),
-            baseLoginAliyun = getPath("base-login-aliyun", "1.0.1", false),
+            baseLoginAliyun = getPath("base-login-aliyun", "1.0.2", false),
             basePushAliyun = getPath("base-push-aliyun", "1.0.1", false),
             baseUmeng = getPath("base-umeng", "1.0.1", false),
             baseUpload = getPath("base-upload", "1.0.1", false),
