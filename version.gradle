@@ -63,7 +63,7 @@ ext {
 
             //仓库：qlife-base-app-android
             baseActivity = getPath("base-activity", "1.0.2", false),
-            baseAuth = getPath("base-auth", "1.0.1", false),
+            baseAuth = getPath("base-auth", "1.0.2", false),
             baseBean = getPath("base-bean", "1.0.1", false),
             baseRouter = getPath("base-router", "1.0.1", false),
 
@@ -75,7 +75,7 @@ ext {
             basePushAliyun = getPath("base-push-aliyun", "1.0.2", false),
             baseUmeng = getPath("base-umeng", "1.0.1", false),
             baseUpload = getPath("base-upload", "1.0.1", false),
-            baseUpdate = getPath("base-update", "1.0.1", false),
+            baseUpdate = getPath("base-update", "1.0.2", false),
             baseLbsAmap = getPath("base-lbs-amap", "1.0.1", false),
             baseMqtt = getPath("base-mqtt", "1.0.1", false),
             baseDevTools = getPath("base-dev-tools", "1.0.3", false),
