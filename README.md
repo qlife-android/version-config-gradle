@@ -2,6 +2,42 @@
 
 [master 最新版链接](https://raw.githubusercontent.com/qlife-android/version-config-gradle/master/version.gradle)
 
+## 组件合并情况
+
+:white_check_mark: ：已合并	:large_blue_circle: ：未合并	:o: ：未使用
+
+| 序号 | 组件                  |        嗷嗷        |             之家              |             橙途              |             boss              |
+| :--: | --------------------- | :----------------: | :---------------------------: | :---------------------------: | :---------------------------: |
+|  01  | lib-utils             | :white_check_mark: |      :white_check_mark:       | :large_blue_circle: |      :white_check_mark:       |
+|  02  | lib-net               | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  03  | lib-verification-code | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  04  | lib-float-view        | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  05  | lib-slideview         | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  06  | lib-countdown-view    | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  07  | lib-arouter           | :white_check_mark: |              :large_blue_circle:              |              :large_blue_circle:              |              :large_blue_circle:              |
+|  08  | lib-crashlytics       | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  09  | lib-login-aliyun      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  10  | lib-widget            | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  11  | lib-res               | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  12  | lib-dialog            | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  13  | lib-base-adapter      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  14  | lib-baidu-face-ui     | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  15  | lib-baidu-ocr-ui      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+
+
+
+
+
+
+
+
 
 
 ## 通用的基础业务组件
@@ -45,6 +81,10 @@
 |      |                                                              |                        |            |
 |      |                                                              |                        |            |
 |      |                                                              |                        |            |
+
+
+
+
 
 
 
