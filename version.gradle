@@ -45,7 +45,7 @@ ext {
             //todo maven 组件版本区分 release 和 snapshot ,添加 versionSuffix 后缀自动适配
             //todo maven 组件版本区分 debug 和 release ,添加 buildSuffix 后缀自动适配
             libNet = getPath("lib-net", "1.0.1"),
-            libUtils = getPath("lib-utils", "1.0.0"),
+            libUtils = getPath("lib-utils", "1.1.0"),
             libVerificationCode = getPath("lib-verification-code", "1.0.0"),
             libFloatView = getPath("lib-float-view", "1.0.0"),
             libSlideview = getPath("lib-slideview", "1.0.0"),
