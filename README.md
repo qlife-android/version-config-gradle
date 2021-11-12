@@ -6,29 +6,32 @@
 
 :white_check_mark: ：已合并	:large_blue_circle: ：未合并	:o: ：未使用
 
-| 序号 | 组件                  |        嗷嗷        |             之家              |             橙途              |             boss              | 版本 |
-| :--: | --------------------- | :----------------: | :---------------------------: | :---------------------------: | :---------------------------: | :--: |
-|  01  | lib-utils             | :white_check_mark: |      :white_check_mark:       | :large_blue_circle: |      :white_check_mark:       | 1.1.0 |
-|  02  | lib-net               | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |  |
-|  03  | lib-verification-code | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |  |
-|  04  | lib-float-view        | :white_check_mark: |              :o:              |              :o:              |              :o:              |  |
-|  05  | lib-slideview         | :white_check_mark: |              :o:              |              :o:              |              :o:              |  |
-|  06  | lib-countdown-view    | :white_check_mark: |              :o:              |              :o:              |              :o:              |  |
-|  07  | lib-arouter           | :white_check_mark: |              :large_blue_circle:              |              :large_blue_circle:              |              :large_blue_circle:              |  |
-|  08  | lib-crashlytics       | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  09  | lib-login-aliyun      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  10  | lib-widget            | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  11  | lib-res               | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  12  | lib-dialog            | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  13  | lib-base-adapter      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  14  | lib-baidu-face-ui     | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  15  | lib-baidu-ocr-ui      | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| 序号 | 组件                  |        嗷嗷        |             之家              |             橙途              |             boss              |
+| :--: | --------------------- | :----------------: | :---------------------------: | :---------------------------: | :---------------------------: |
+|  01  | lib-utils             | :white_check_mark: |      :white_check_mark:       | :large_blue_circle: |      :white_check_mark:       |
+|  02  | lib-net               | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+|  03  | lib-verification-code | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+|  04  | lib-float-view        | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  05  | lib-slideview         | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  06  | lib-countdown-view    | :white_check_mark: |              :o:              |              :o:              |              :o:              |
+|  07  | lib-arouter           | :white_check_mark: |              :large_blue_circle:              |              :large_blue_circle:              |              :large_blue_circle:              |
+|  08  | lib-crashlytics       | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+|  09  | lib-login-aliyun      | :white_check_mark: | :o: | :large_blue_circle: | :large_blue_circle: |
+|  10  | lib-widget            | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  11  | lib-res               | :white_check_mark: | :large_blue_circle: | :large_blue_circle: | :large_blue_circle: |
+|  12  | lib-dialog            | :white_check_mark: | :o: | :large_blue_circle: | :large_blue_circle: |
+|  13  | lib-base-adapter      | :white_check_mark: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+|  14  | lib-baidu-face-ui     | :white_check_mark: | :o: | :large_blue_circle: | :large_blue_circle: |
+|  15  | lib-baidu-ocr-ui      | :white_check_mark: | :o: | :large_blue_circle: | :large_blue_circle: |
+| 16 | lib-swipe-activity | :o: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+| 17 | lib-index | :o: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+| 18 | lib-click-filter | :o: | :white_check_mark: | :large_blue_circle: | :large_blue_circle: |
+| 19 | Lib-ui-helper | :o: | :white_check_mark: | :o: | :o: |
+| 20 | lib-ui-popup | :o: | :white_check_mark: | :o: | :o: |
+| 21 | lib-ui-rv-swipe-menu | :o: | :white_check_mark: | :o: | :o: |
+| 22 | lib-ui-rv-swipe-menu-cym-adapter | :o: | :white_check_mark: | :o: | :o: |
+| 23 | lib-amap-admin | :o: | :white_check_mark: | :o: | :o: |
+| 24 | lib-room-admin | :o: | :white_check_mark: | :o: | :o: |
 
 
 

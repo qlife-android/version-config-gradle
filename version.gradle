@@ -91,8 +91,14 @@ ext {
 
             //仓库： https://github.com/qlife-android/qlife-lib-ui-android
             libUiHelper = getPath("lib-ui-helper", "1.0.0", false),
+            libUiPopup = getPath("lib-ui-popup", "1.0.1", false),
+            libUiRvSwipMenu = getPath("lib-ui-rv-swipe-menu", "1.0.1", false),
+            libUiRvSwipMenuCymAdapter = getPath("lib-ui-rv-swipe-menu-cym-adapter", "1.0.1", false),    
 
-
+            //仓库   https://github.com/qlife-android/qlife-lib-android    
+            libSwipActivity = getPath("lib-swipe-activity", "1.0.0", false),
+            libClickFilter = getPath("lib-click-filter", "1.0.0", false),
+            libIndex = getPath("lib-index", "1.0.0", false),
     ]
 
     //依赖信息更新完之后，顺序执行到这里开始生成json
@@ -117,7 +123,9 @@ ext {
             aliPushVersion = '3.2.1',
             appDispatcherVersion = '1.0.6',
             jDispatcherVersion = '0.0.7',
-            navigationVersion = "2.3.5"
+            navigationVersion = "2.3.5",
+            room_version = "2.3.0"
+
 
     ]
 
@@ -456,6 +464,14 @@ ext {
 
             //https://github.com/CymChad/BaseRecyclerViewAdapterHelper
             cymAdapter="com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4",
+
+            //room
+
+            roomRuntime = "androidx.room:room-runtime:$room_version",
+            roomCompiler = "androidx.room:room-compiler:$room_version",
+            // RxJava support for Room
+            roomRxjava2 = "androidx.room:room-rxjava2:$room_version",
+            roomKapt = "androidx.room:room-compiler:$room_version",
 
     ]
 
